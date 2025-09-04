@@ -4,7 +4,7 @@ import PROFILE from "../data/profile";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden">
+    <section id="home" className="relative overflow-hidden min-h-screen flex items-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
