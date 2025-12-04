@@ -27,8 +27,21 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm hover:underline"
+                    aria-label={`${p.title} - source code`}
                   >
                     Code <Github className="w-4 h-4" />
+                  </a>
+                )}
+
+                {p.links.live && (
+                  <a
+                    href={p.links.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-sm hover:underline"
+                    aria-label={`${p.title} - live demo`}
+                  >
+                    Live <ExternalLink className="w-4 h-4" />
                   </a>
                 )}
               </div>
